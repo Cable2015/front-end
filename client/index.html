@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+    <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+    <meta charset="utf-8">
+    <title>myApp</title>
+    <!-- THESE TWO VERSIONS BELOW MUST MATCH (good thing bower will catch that for us, but be aware if you are using CDN's)!!! -->
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="/js/script.js"></script>
+    <style>
+      .city {
+          float: left;
+          margin: 5px;
+          padding: 15px;
+          max-width: 300px;
+          height: 300px;
+          border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header" >
+        <h1><a href="#/"> < CohortAlum > </a></h1>
+          <ul>
+            	<!-- <div ng-app='myApp'> -->
+            <li><a href="#/profile">Profile</a></li>
+            <li><a href="#/wall">Wall</a></li>
+            <li><a href="#/about">About</a></li>
+            <!-- <li><a href="#">Job Posting</a></li> -->
+            <li><a href="#">Bootcamps</a></li>
+
+          <a href="#/signup_login"><input type="submit" value="Login"></a>
+          </ul>
+      <div/>
+        <div id="main-content">
+          </div>
+        	<!-- </div> -->
+        </div>
+    </div>
+
+        <div ng-app='myApp'>
+          <div ng-view=‘’></div>
+        </div>
+
+  </body>
+</html>
